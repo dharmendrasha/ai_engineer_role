@@ -1,0 +1,151 @@
+.incident-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.incident-list-header {
+  margin-bottom: 2rem;
+}
+
+.incident-list-header h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.severity-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e1e5e9;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: #555;
+  margin-right: 0.5rem;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #6c757d;
+  background: white;
+  color: #6c757d;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.filter-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button.active {
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f5c6cb;
+}
+
+.error-text {
+  font-weight: 500;
+}
+
+.retry-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.retry-button:hover {
+  background: #c82333;
+}
+
+.incidents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.no-incidents {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .incident-list-container {
+    padding: 0.5rem;
+  }
+
+  .incident-list-header h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .severity-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-label {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .incidents-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .error-message {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .incidents-grid {
+    grid-template-columns: 1fr;
+  }
+}

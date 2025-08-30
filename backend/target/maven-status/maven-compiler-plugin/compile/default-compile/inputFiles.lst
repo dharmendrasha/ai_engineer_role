@@ -1,0 +1,12 @@
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/dto/IncidentRequestDto.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/service/AITriageService.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/model/Severity.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/service/impl/AITriageServiceImpl.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/repository/IncidentRepository.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/service/IncidentService.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/model/Category.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/model/Incident.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/service/impl/IncidentServiceImpl.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/IncidentTriageApplication.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/dto/IncidentResponseDto.java
+/Users/soni/work/test-motadata/backend/src/main/java/com/itsm/incident/controller/IncidentController.java

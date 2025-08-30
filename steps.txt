@@ -1,0 +1,60 @@
+start backend
+
+mvn spring-boot:run
+
+
+start frontend
+
+npm run start
+
+
+h2 Database
+http://localhost:8080/h2-console/login.do?jsessionid=0e59c6f63d7cca4b604b328470ea5694
+
+
+
+how part?
+
+How the Backend AI Calculation Works:
+1. Text Analysis Process
+
+String combinedText = (incident.getTitle() + " " + 
+                      incident.getDescription() + " " + 
+                      incident.getAffectedService()).toLowerCase();
+
+Combines all text fields into one string
+Converts to lowercase for case-insensitive matching
+2. Severity Calculation Algorithm
+The system uses a hierarchical keyword matching approach:
+
+
+
+
+2. Severity Calculation Algorithm
+The system uses a hierarchical keyword matching approach:
+
+CRITICAL (Highest Priority):
+
+Keywords: "critical", "down", "outage", "failure", "crashed", "security breach", "data loss"
+Action: "IMMEDIATE ACTION REQUIRED"
+HIGH Priority:
+
+Keywords: "slow", "intermittent", "degraded", "timeout", "error", "warning"
+Action: "High priority - escalate to senior team"
+MEDIUM Priority:
+
+Default fallback when no specific keywords match
+Action: "Standard resolution process"
+LOW Priority:
+
+Keywords: "minor", "small", "occasional", "sometimes"
+Action: "Low priority - can be handled during regular hours"
+3. Category Classification
+Uses keyword-to-category mapping:
+
+4. Action Generation Logic
+Combines severity + category for contextual recommendations:
+
+Severity prefix: Sets urgency level
+Category-specific actions: Provides technical guidance
+
